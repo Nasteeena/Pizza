@@ -1,6 +1,6 @@
-import { PayloadAction, createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import axios from "axios";
-import { API_COMBINED } from "../utils/API";
+import { PayloadAction, createSlice } from "@reduxjs/toolkit";
+// import axios from "axios";
+// import { API_COMBINED } from "../utils/API";
 
 export interface CartItem {
     id: number,
@@ -32,9 +32,6 @@ export const cartSlice = createSlice({
                 return item;
             });
         }
-    },
-    extraReducers: (builder) => {
-        
     }
 });
 

@@ -13,11 +13,11 @@ import { API_COMBINED } from "../../../utils/API";
 
 export default function Menu() {
     const [isLoading, setIsLoading] = useState<boolean>(false);
-    const [query, setQuery] = useState('');
+    const [query, setQuery] = useState("");
     const [error, setError] = useState<string | undefined>();
     const [products, setProducts] = useState<ProductInterface[]>([]);
 
-    const handleSearch = (e) => {
+    const handleSearch = (e:  React.ChangeEvent<HTMLInputElement>) => {
         setQuery(e.target.value);
     };
 
