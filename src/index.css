@@ -1,0 +1,31 @@
+:root {
+  --font-main: 'Open Sans', sans-serif;
+
+  --primary-color: #FE724C;
+  --primary-hover-color: #d89b89;
+  --white-color: #FFFFFF;
+  --text-black-color: #000000;
+  --text-secondary-color: #5b5b5b;
+  --separator-color: #D4D6E0;
+  --border-color: #EEEEEE;
+  --input-color: #C4C4C4;
+}
+
+body {
+  font-family: var(--font-main);
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
